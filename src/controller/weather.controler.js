@@ -25,4 +25,9 @@ let deleteWeather = (temperature,localization,day,id) =>{
      }
 }
 
-export {createWeather, AllWeathers, deleteWeather}
+let searchWeatherById = (id) =>{
+let weather = Weathers.find(data => data.id === id)
+return weather
+}
+
+export {createWeather, AllWeathers, deleteWeather, searchWeatherById}

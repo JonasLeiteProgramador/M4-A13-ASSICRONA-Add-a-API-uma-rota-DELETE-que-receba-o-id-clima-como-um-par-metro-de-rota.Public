@@ -1,4 +1,4 @@
-import { createWeather, AllWeathers, deleteWeather } from "../controller/weather.controler.js";
+import { createWeather, AllWeathers, deleteWeather,searchWeatherById } from "../controller/weather.controler.js";
 import  {Router}  from "express";
 
 const weatherRoutes = Router()
@@ -26,6 +26,13 @@ weatherRoutes.delete('/delete-weather/:id',(req,res)=>{
 
 
 })
+
+weatherRoutes.get('/weather/:id',(req,res)=>{
+  const id = req.params.id;
+  const weather = searchWeatherById(id)
+ res.status(201).json({weather})
+})
+ 
 
 
 export { weatherRoutes}
