@@ -1,0 +1,2 @@
+Usando o projeto construído na atividade assíncrona passada. Adicione a API uma rota DELETE que receba o id do usuário como um parâmetro de rota. A API deve verificar se o usuário existe no banco de dados mocado e, se existir, removê-lo. A API deve enviar uma resposta com um código de sucesso e uma mensagem confirmando a deleção. Se o usuário não existir, a API deve enviar uma resposta com um código de erro e uma mensagem explicando o problema.
+
